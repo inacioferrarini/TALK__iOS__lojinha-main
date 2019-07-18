@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Common
 
 class Main {
     static let name = "Main"
