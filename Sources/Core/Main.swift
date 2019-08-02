@@ -6,9 +6,9 @@
 //  Copyright © 2019 inacioferrarini. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Common
 
-class Main {
-    static let name = "Main"
+public class Main {
+    static let name = "Main"    
 }

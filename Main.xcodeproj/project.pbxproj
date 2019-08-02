@@ -33,6 +33,7 @@
 		35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
+		BB47DA8422E0E3DA00B23501 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47DA8322E0E3DA00B23501 /* MainCoordinator.swift */; };
 		BB9AF43522DFC78500AD7E58 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9AF43422DFC78500AD7E58 /* Common.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		BB47DA8322E0E3DA00B23501 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		BB9AF43422DFC78500AD7E58 /* Common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Common.framework; path = Carthage/Build/iOS/Common.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -266,9 +268,34 @@
 		359649011FB18CBF00FC7ADC /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BB47DA8222E0E3C500B23501 /* Resources */,
+				BB47DA8022E0E3AE00B23501 /* Controllers */,
+				BB47DA8122E0E3B700B23501 /* Coordinators */,
 				359649021FB18CBF00FC7ADC /* Main.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		BB47DA8022E0E3AE00B23501 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB47DA8122E0E3B700B23501 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BB47DA8322E0E3DA00B23501 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BB47DA8222E0E3C500B23501 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,6 +594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649031FB18CC000FC7ADC /* Main.swift in Sources */,
+				BB47DA8422E0E3DA00B23501 /* MainCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
